@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+<title>Ticket Reservation System</title>
+</header>
+<body>
+<body bgcolor="gold">
+<center><h1>Movie Ticket Reservation</h1></center>
+<center><h1>Now Showing</h1></center>
+<div align="center">
+<img src="pathaan.jpg" alt="Pathaan"width="399">
+<img src="vikram.jpg"alt="vikram"width="470">
+<img src="topgun.png"alt="topgun"width="390">
+</div><br>
+<center>
+<hr>
+<h2 id="schedule">Today's Showtimings</h2>
+<table border="1" cellpadding="10">
+<thead>
+<tr>
+<th>Movie Poster</th>
+<th>Movie Name</th>
+<th>Showtime</th>
+<th>Price</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><img src="pathaan.jpg" alt="Pathaan"width="100"></td>
+<td>Pathaan</td>
+<td>3:30 PM</td>
+<td>1200</td>
+</tr><tr>
+<td><img src="vikram.jpg"alt="vikram"width="100"></td>
+<td>Vikram</td>
+<td>7:00 PM</td>
+<td>1000</td>
+</tr>
+<tr>
+<td><img src="topgun.png"alt="topgun"width="100"></td>
+<td>TopGun</td>
+<td>9:00 PM</td>
+<td>2000</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="book">Booking Form</h2>
+<form action="#" method="POST">
+<p>
+<label>Name:</label><br>
+<input type="text" id="name" name="name" required>
+</p>
+<p>
+<label>Email:</label><br>
+<input type="email" id="email" name="email" required>
+</p>
+<p>
+<label for="movie">Select Movie:</label><br>
+<select id="movie" name="movie" required>
+<option value="">Select</option>
+<option value="scifi">Pathaan</option>
+<option value="mystery">Vikram</option>
+<option value="mystery">TopGun</option>
+</select>
+</p>
+<p>
+<label>Number of Tickets:</label><br>
+<input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+</p>
+<p>
+<label>Date:</label><br>
+<input type="date" id="date" name="date" required>
+</p>
+<p>
+<button type="submit">Book Now</button>
+</p>
+</form>
+</center><hr><ul>
+<h2>Links</h2>
+<li><a href="#schedule">View Schedule</a></li>
+<li><a href="#book">Book Tickets</a></li><ol></ul>
+</body>
+</html>
